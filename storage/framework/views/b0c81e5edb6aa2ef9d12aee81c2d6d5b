@@ -24,11 +24,8 @@
 
  <script>
   $(function () {
-<<<<<<< HEAD
-=======
     $(".select2").select2();
-    
->>>>>>> master
+
     $("#example1").DataTable()
     $('#example2').DataTable({
       "paging": true,
@@ -39,8 +36,7 @@
       "autoWidth": false
     });
   });
-<<<<<<< HEAD
-=======
+
 </script>
 
 

@@ -176,12 +176,5 @@
   </div>
 </div>
 
-
-
-
-
-
 </section><!-- /.content -->
-
->>>>>>> master
 @endsection
