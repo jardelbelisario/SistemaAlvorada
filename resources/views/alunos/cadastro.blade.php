@@ -127,7 +127,7 @@
               <label for="exampleInputFile">Foto</label>           
            
               <img src="/img2/avatar.png" id="img-photo" class="tamanho-foto"><br>
-              <div style="display:none"><canvas class="canvas-area" id="canvas" width="300" height="300"></canvas></div>
+              <div style="display:none"><canvas class="canvas-area" id="canvas" width="400" height="300"></canvas></div>
               <br>
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-block" data-toggle="modal" data-target="#myModal" id="get-user-media" href="#" >Abrir Webcam
