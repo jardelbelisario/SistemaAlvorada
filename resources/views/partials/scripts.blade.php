@@ -129,5 +129,4 @@ $(function() {
   $('#get-user-media').click(requestMedia);
 });
 
->>>>>>> master
 </script>
