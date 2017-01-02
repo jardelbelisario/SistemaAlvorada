@@ -17,6 +17,22 @@
 
 				<div class="panel-body">
 					You are logged in!
+
+					<br><br><br>
+					<div id="my-other-element" class="row">
+						<div class="col-md-3">
+							<button id="btn-success" type="button" class="btn btn-block btn-primary">Primary</button>
+						</div>
+						<div class="col-md-3">
+							<button id="btn-primary" type="button" class="btn btn-block btn-success">Success</button>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-block btn-info">Info</button>
+						</div>
+						<div class="col-md-3">
+							<button type="button" class="btn btn-block btn-warning">Warning</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Alert;
 
 class Alunos extends Controller
 {
@@ -16,7 +17,7 @@ class Alunos extends Controller
      */
     public function index()
     {
-        $contentheader_title =  "Listagem de Alunos";
+        $contentheader_title =  "LISTAGEM DE ALUNOS";
         $contentheader_description = "Todos os alunos cadastrados no Sistema Alvorada.";
 
         return view('alunos.listagem', compact('contentheader_title','contentheader_description'));
@@ -30,7 +31,7 @@ class Alunos extends Controller
      */
     public function create()
     {
-        $contentheader_title =  "Cadastro de Alunos";
+        $contentheader_title =  "CADASTRO DE ALUNO";
         $contentheader_description = "Cadastro de um novo aluno no Sistema Alvorada.";
         return view('alunos.cadastro', compact('contentheader_title','contentheader_description'));
     }
@@ -43,7 +44,11 @@ class Alunos extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Alert::success(
+                        'Caso seja necessário, faça um novo cadastro.', 
+                        'Cadastro realizado com sucesso!'
+                    )->persistent("Ok");;
+        return redirect('/home/alunos/cadastrar');
     }
 
     /**

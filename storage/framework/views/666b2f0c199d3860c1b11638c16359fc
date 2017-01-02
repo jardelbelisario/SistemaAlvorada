@@ -1,0 +1,15 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <h1>
+<!--         <?php echo $__env->yieldContent('contentheader_title', 'Cabeçalho da página vem aqui'); ?>
+        <small><?php echo $__env->yieldContent('contentheader_description'); ?></small> -->
+        <?php echo e($contentheader_title); ?> 
+        <small>| <?php echo e($contentheader_description); ?></small>
+    </h1>
+    <ol class="breadcrumb">
+        <li>
+        	<a href="#"><i class="fa fa-dashboard"></i> <?php echo $__env->yieldContent('breadcrumb_level_1'); ?></a>
+        </li>
+        <li class="active"><?php echo $__env->yieldContent('breadcrumb_level_2'); ?></li>
+    </ol>
+</section>
