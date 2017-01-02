@@ -26,6 +26,8 @@
 
     <link href="{{ asset('/plugins/select2/select2.min.css')}}" rel="stylesheet">
 
+    <link href="{{ asset('/css/sweetalert.css') }}" rel="stylesheet" type="text/css" >
+
     
      <!-- <link href="{{asset('/dist/css/skins/_all-skins.min.css')}}" rel="stylesheet" type="text/css" /> -->
 

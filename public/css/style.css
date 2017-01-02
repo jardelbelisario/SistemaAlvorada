@@ -1,3 +1,13 @@
 .tamanho-foto{
 	width: 100%
 }
+
+.btn-alvorada{
+	background-color: #008642;
+	color: #fff;
+}  
+
+.btn-alvorada:hover{
+	background-color: #24D37A;
+	color: #fff;
+} 

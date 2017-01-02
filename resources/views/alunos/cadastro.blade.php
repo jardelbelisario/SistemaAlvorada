@@ -26,7 +26,7 @@
       <!-- general form elements -->
       <div class="box box-danger">
         <!-- form start -->
-        <form action="/home/alunos/cadastrar" method="GET" enctype="multipart/form-data" role="form">
+        <form action="/home/alunos/cadastrar" method="POST" enctype="multipart/form-data" role="form">
           {!! csrf_field() !!}
           <div class="box-header with-border">
             <h3 class="box-title">ADICIONAR USUÁRIO</h3>
@@ -143,8 +143,9 @@
           <div class="col-xs-12">
           <div class="box-footer">
             <div class="form-group">
-              <button type="submit" class="btn btn-success btn-block btn-lg" type="submit">Enviar Dados</button>
-
+              <button  type="submit" class="btn btn-alvorada btn-block btn-lg" type="submit">
+                Enviar Dados
+              </button>
             </div>
           </div>
           </div>
@@ -157,7 +158,7 @@
 
 
 
-<!-- Modal -->
+<!-- Modal Chamando a tela Video -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">

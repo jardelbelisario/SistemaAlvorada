@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use Alert;
 
 class Alunos extends Controller
 {
@@ -43,7 +44,11 @@ class Alunos extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Alert::success(
+                        'Caso seja necessário, faça um novo cadastro.', 
+                        'Cadastro realizado com sucesso!'
+                    )->persistent("Ok");;
+        return redirect('/home/alunos/cadastrar');
     }
 
     /**

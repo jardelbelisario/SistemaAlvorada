@@ -18,3 +18,4 @@ Route::get('/', function () {
 Route::get('home', 'HomeController@index');
 Route::get('home/alunos/listagem', 'Alunos@index');
 Route::get('home/alunos/cadastrar', 'Alunos@create');
+Route::post('home/alunos/cadastrar', 'Alunos@store');
