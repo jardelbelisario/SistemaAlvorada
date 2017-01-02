@@ -5,9 +5,16 @@
     <!-- Bootstrap 3.3.4 -->
     <link href="{{ asset('/css/bootstrap.css') }}" rel="stylesheet" type="text/css" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Bootstrap 3.3.4 -->
     <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css" />
 =======
+>>>>>>> develop
+=======
+
+    <!-- Bootstrap 3.3.4 -->
+    <link href="{{ asset('/css/style.css') }}" rel="stylesheet" type="text/css" />
+
 >>>>>>> develop
     <!-- Font Awesome Icons -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
@@ -25,8 +32,16 @@
 
     <link href="{{ asset('/plugins/datatables/dataTables.bootstrap.css')}}" rel="stylesheet" type="text/css" />
 <<<<<<< HEAD
+<<<<<<< HEAD
     <link href="{{ asset('/plugins/select2/select2.min.css')}}" rel="stylesheet">
 =======
+>>>>>>> develop
+=======
+
+    <link href="{{ asset('/plugins/select2/select2.min.css')}}" rel="stylesheet">
+
+    <link href="{{ asset('/css/sweetalert.css') }}" rel="stylesheet" type="text/css" >
+
 >>>>>>> develop
     
      <!-- <link href="{{asset('/dist/css/skins/_all-skins.min.css')}}" rel="stylesheet" type="text/css" /> -->

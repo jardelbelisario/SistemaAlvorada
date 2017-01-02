@@ -13,7 +13,10 @@
 
 <!-- Select2 -->
 <script src="{{asset('/plugins/select2/select2.full.min.js')}}"></script>
+<<<<<<< HEAD
 
+=======
+>>>>>>> develop
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
@@ -23,9 +26,13 @@
 
  <script>
   $(function () {
+<<<<<<< HEAD
 
     $(".select2").select2();
     
+=======
+    $(".select2").select2();
+>>>>>>> develop
 
     $("#example1").DataTable()
     $('#example2').DataTable({
@@ -130,4 +137,56 @@ $(function() {
   $('#get-user-media').click(requestMedia);
 });
 
+<<<<<<< HEAD
 </script>
+=======
+</script>
+
+<!-- alert -->
+<script src="{{ asset('/js/sweetalert.min.js') }}"></script>
+<script>
+  
+  var btnSuccess = document.getElementById('btn-success');
+  btnSuccess.addEventListener('click', function() {
+      swal("Good job!", "You clicked the button!", "success")
+    
+  }, false);
+
+  var btnCadAlunoSucceess = document.getElementById('cad-aluno-succeess');
+  btnCadAlunoSucceess.addEventListener('click', function() {
+      swal("Good job!", "You clicked the button!", "success")
+    
+  }, false);
+
+
+
+  var btnPrimary = document.getElementById('btn-primary');
+  btnPrimary.addEventListener('click', function() {
+      swal({
+          title: "Are you sure?",
+          text: "You will not be able to recover this imaginary file!",
+          type: "warning",
+          showCancelButton: true,
+          confirmButtonColor: "#DD6B55",
+          confirmButtonText: "Yes, delete it!",
+          cancelButtonText: "No, cancel plx!",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
+        function(isConfirm){
+          if (isConfirm) {
+            swal("Deleted!", "Your imaginary file has been deleted.", "success");
+          } else {
+            swal("Cancelled", "Your imaginary file is safe :)", "error");
+          }
+        });
+    
+  }, false);
+
+
+
+
+</script>
+
+@include('sweet::alert')
+>>>>>>> develop
