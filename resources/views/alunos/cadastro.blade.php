@@ -18,7 +18,7 @@
 
 
 @section('main-content')
-<<<<<<< HEAD
+
 <!-- Main content -->
 <section class="content">
   <div class="row">
@@ -183,7 +183,7 @@
 
 </section><!-- /.content -->
 
-=======
+
 <div class="container-wrapper">
 	<div class="row">
 		<div class="col-md-12">
@@ -244,5 +244,5 @@
 	</div>
 </div>
 <!-- /.container-wrapper -->
->>>>>>> develop
+
 @endsection

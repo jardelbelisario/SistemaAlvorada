@@ -10,11 +10,10 @@
  <!-- DATA TABES SCRIPT -->
 <script src="{{asset('/plugins/datatables/jquery.dataTables.js')}}" type="text/javascript"></script>
 <script src="{{asset('/plugins/datatables/dataTables.bootstrap.js')}}" type="text/javascript"></script>
-<<<<<<< HEAD
+
 <!-- Select2 -->
 <script src="{{asset('/plugins/select2/select2.full.min.js')}}"></script>
-=======
->>>>>>> develop
+
 
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
@@ -24,11 +23,10 @@
 
  <script>
   $(function () {
-<<<<<<< HEAD
+
     $(".select2").select2();
     
-=======
->>>>>>> develop
+
     $("#example1").DataTable()
     $('#example2').DataTable({
       "paging": true,
@@ -39,7 +37,7 @@
       "autoWidth": false
     });
   });
-<<<<<<< HEAD
+
 </script>
 
 
@@ -132,6 +130,4 @@ $(function() {
   $('#get-user-media').click(requestMedia);
 });
 
-=======
->>>>>>> develop
 </script>
