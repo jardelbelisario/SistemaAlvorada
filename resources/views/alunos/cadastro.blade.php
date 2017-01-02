@@ -29,16 +29,20 @@
         <form action="/home/alunos/cadastrar" method="POST" enctype="multipart/form-data" role="form">
           {!! csrf_field() !!}
           <div class="box-header with-border">
-            <h3 class="box-title">ADICIONAR USUÁRIO</h3>
+            <h3 class="box-title">
+              <a href="/home/alunos/listagem" class="btn btn-default pull-left" >
+                <i class="fa fa-list"></i> Ir para listagem de Alunos
+              </a>
+            </h3>
             <!--
             <a href="/panel/usuarios" class="btn btn-primary pull-right">Listar Usuários</a>  -->
           </div><!-- /.box-header -->
 
           <div class="box-body">
             <div class="col-md-12">
-             <a href="/panel/usuarios"class="btn btn-default pull-left" >
+             <!-- <a href="/panel/usuarios"class="btn btn-default pull-left" >
               <i class="fa fa-list"></i> Ir para listagem de Usuários
-            </a>
+            </a> -->
           </div>
 
           <br><br>
