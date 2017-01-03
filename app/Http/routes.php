@@ -30,7 +30,7 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Professores@store');
 	});
 
-		Route::group(['prefix' => 'disciplinas'], function(){
+	Route::group(['prefix' => 'disciplinas'], function(){
 		Route::get('listagem', 'Disciplinas@index');
 		Route::get('cadastrar', 'Disciplinas@create');
 		Route::post('cadastrar', 'Disciplinas@store');
