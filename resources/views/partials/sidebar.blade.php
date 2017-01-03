@@ -67,8 +67,8 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-book'></i> <span>Disciplinas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ url('home/alunos/cadastrar') }}">Cadastrar</a></li>
-                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
+                    <li><a href="{{ url('home/disciplinas/cadastrar') }}">Cadastrar</a></li>
+                    <li><a href="{{ url('home/disciplinas/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 

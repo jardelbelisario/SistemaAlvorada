@@ -25,15 +25,18 @@ Route::group(['prefix' => 'home'], function(){
 	});
 
 	Route::group(['prefix' => 'professores'], function(){
-		Route::get('listagem', 'PRofessores@index');
-		Route::get('cadastrar', 'PRofessores@create');
-		Route::post('cadastrar', 'PRofessores@store');
+		Route::get('listagem', 'Professores@index');
+		Route::get('cadastrar', 'Professores@create');
+		Route::post('cadastrar', 'Professores@store');
 	});
 
-	Route::group(['prefix' => 'turmas'], function(){
-		Route::get('listagem', 'Turmas@index');
-		Route::get('cadastrar', 'Turmas@create');
-		Route::post('cadastrar', 'Turmas@store');
+
+		Route::group(['prefix' => 'disciplinas'], function(){
+		Route::get('listagem', 'Disciplinas@index');
+		Route::get('cadastrar', 'Disciplinas@create');
+		Route::post('cadastrar', 'Disciplinas@store');
 	});
+
+	
 });
 
