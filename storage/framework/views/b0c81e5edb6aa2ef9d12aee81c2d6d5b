@@ -13,11 +13,6 @@
 
 <!-- Select2 -->
 <script src="<?php echo e(asset('/plugins/select2/select2.full.min.js')); ?>"></script>
-<<<<<<< HEAD
-
-=======
->>>>>>> develop
-
 
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the
@@ -26,13 +21,8 @@
 
  <script>
   $(function () {
-<<<<<<< HEAD
 
     $(".select2").select2();
-    
-=======
-    $(".select2").select2();
->>>>>>> develop
 
     $("#example1").DataTable()
     $('#example2').DataTable({
@@ -137,9 +127,6 @@ $(function() {
   $('#get-user-media').click(requestMedia);
 });
 
-<<<<<<< HEAD
-</script>
-=======
 </script>
 
 <!-- alert -->
@@ -189,4 +176,3 @@ $(function() {
 </script>
 
 <?php echo $__env->make('sweet::alert', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
->>>>>>> develop
