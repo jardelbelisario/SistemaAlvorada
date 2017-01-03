@@ -30,5 +30,10 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'PRofessores@store');
 	});
 
+	Route::group(['prefix' => 'turmas'], function(){
+		Route::get('listagem', 'Turmas@index');
+		Route::get('cadastrar', 'Turmas@create');
+		Route::post('cadastrar', 'Turmas@store');
+	});
 });
 
