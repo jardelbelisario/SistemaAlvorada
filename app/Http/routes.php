@@ -16,6 +16,19 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'HomeController@index');
-Route::get('home/alunos/listagem', 'Alunos@index');
-Route::get('home/alunos/cadastrar', 'Alunos@create');
-Route::post('home/alunos/cadastrar', 'Alunos@store');
+Route::group(['prefix' => 'home'], function(){
+	
+	Route::group(['prefix' => 'alunos'], function(){
+		Route::get('listagem', 'Alunos@index');
+		Route::get('cadastrar', 'Alunos@create');
+		Route::post('cadastrar', 'Alunos@store');
+	});
+
+	Route::group(['prefix' => 'professores'], function(){
+		Route::get('listagem', 'PRofessores@index');
+		Route::get('cadastrar', 'PRofessores@create');
+		Route::post('cadastrar', 'PRofessores@store');
+	});
+
+});
+

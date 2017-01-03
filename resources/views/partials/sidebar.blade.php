@@ -42,24 +42,24 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-group'></i> <span>Professores</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Visualizar</a></li>
+                    <li><a href="{{ url('home/professores/cadastrar') }}">Cadastrar</a></li>
+                    <li><a href="{{ url('home/professores/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 
             <li class="treeview">
                 <a href="#"><i class='fa fa-folder-open'></i> <span>Cursos</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Visualizar</a></li>
+                    <li><a href="{{ url('home/alunos/cadastrar') }}">Cadastrar</a></li>
+                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 
             <li class="treeview">
                 <a href="#"><i class='fa fa-institution'></i> <span>Turmas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Visualizar</a></li>
+                    <li><a href="{{ url('home/alunos/cadastrar') }}">Cadastrar</a></li>
+                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
                     <li><a href="#">Notas</a></li>
                 </ul>
             </li>
@@ -67,16 +67,16 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-book'></i> <span>Disciplinas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#">Cadastrar</a></li>
-                    <li><a href="#">Visualizar</a></li>
+                    <li><a href="{{ url('home/alunos/cadastrar') }}">Cadastrar</a></li>
+                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 
             <li class="treeview">
                 <a href="#"><i class='fa fa-tasks'></i> <span>Notas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"> Cadastrar</a></li>
-                    <li><a href="#">Visualizar</a></li>
+                    <li><a href="{{ url('home/alunos/cadastrar') }}"> Cadastrar</a></li>
+                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 
