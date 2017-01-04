@@ -4,8 +4,19 @@
 <script src="{{ asset('/plugins/jQuery/jQuery-2.1.4.min.js') }}"></script>
 <!-- Bootstrap 3.3.2 JS -->
 <script src="{{ asset('/js/bootstrap.min.js') }}" type="text/javascript"></script>
+<!-- InputMask -->
+<script src="{{asset('/plugins/input-mask/jquery.inputmask.js') }}"></script>
+<script src="{{asset('/plugins/input-mask/jquery.inputmask.date.extensions.js') }}"></script>
+<script src="{{asset('/plugins/input-mask/jquery.inputmask.extensions.js') }}"></script>
+<!-- date-range-picker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<script src="{{asset('/plugins/daterangepicker/daterangepicker.js') }}"></script>
+<!-- bootstrap datepicker -->
+<script src="{{asset('/plugins/datepicker/bootstrap-datepicker.js') }}"></script>
 <!-- Select2 -->
 <script src="{{asset('/plugins/select2/select2.full.min.js')}}"></script>
+
+
  <!-- DATA TABES SCRIPT -->
 <script src="{{asset('/plugins/datatables/jquery.dataTables.js')}}" type="text/javascript"></script>
 <script src="{{asset('/plugins/datatables/dataTables.bootstrap.js')}}" type="text/javascript"></script>
@@ -52,6 +63,13 @@ $("option").click(function(){
       "info": true,
       "autoWidth": false
     });
+
+     //Datemask dd/mm/yyyy
+    $("#datemask").inputmask("dd/mm/yyyy", {"placeholder": "dd/mm/yyyy"});
+    //Datemask2 mm/dd/yyyy
+    $("#datemask2").inputmask("mm/dd/yyyy", {"placeholder": "mm/dd/yyyy"});
+    //Money Euro
+    $("[data-mask]").inputmask();
 
   });
 

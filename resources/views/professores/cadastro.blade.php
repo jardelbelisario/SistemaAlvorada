@@ -30,19 +30,30 @@ professores
         </div>
         <div class="panel-body">
 
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 col-md-6">
 
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputEmail1">Nome:</label>
+                 <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-user"></i>
+                  </div>
                 <input type="text" name="name" value="" placeholder="Nome" id="exampleInputNome" class="form-control">
+                </div>
               </div>
             </div>
 
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputTelefone">Telefone:</label>
-                <input type="text" name="telefone" value=""  placeholder="Telefone" id="exampleInputTelefone" class="form-control">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <input type="text" class="form-control" data-inputmask='"mask": "(99) 99999-9999"' data-mask>
+                </div>
+                <!-- /.input group -->
               </div>
             </div>         
             
@@ -50,65 +61,71 @@ professores
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputTelefone">CPF:</label>
-                <input type="text" name="cpf" value=""  placeholder="CPF" id="exampleInputTelefone" class="form-control">
+                 <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-warning"></i>
+                  </div>
+                  <input type="text" class="form-control" data-inputmask='"mask": "(99) 99999-9999"' data-mask>
+                </div>
               </div>
             </div>   
 
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputTelefone">Data de nascimento:</label>
-                <input type="text" name="data_nascimento" value=""  placeholder="Data de nascimento" id="exampleInputTelefone" class="form-control">
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-calendar"></i>
+                  </div>
+                  <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask>
+                </div>
               </div>
             </div> 
-          </div><!-- /.col-xs-12 col-md-4 -->
+          </div><!-- /.col-xs-12 col-md-6 -->
 
-          <div class="col-xs-12 col-md-4">
+          <div class="col-xs-12 col-md-6">
             
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputEmail1">Email</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
                 <input type="email" name="email" value="" placeholder="Insira o email" id="exampleInputEmail1" class="form-control">
+                </div>
               </div>
             </div>
 
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputPassword1">Password(Senha)</label>
-                <input type="password" name="password"  placeholder="Digite um password" id="exampleInputPassword1" class="form-control">
+                  <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-lock"></i>
+                  </div>
+                    <input type="password" name="password"  placeholder="Digite um password" id="exampleInputPassword1" class="form-control">
+                  </div>
               </div>
             </div>
             
             <div class="col-xs-12">
               <div class="form-group">
-                <label>Disciplina</label>
-                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true" name="id_ubs">
-                  <option selected="selected">Selecione uma disciplina</option>
-                  <option value="">opção 1</option>
-                  <option value="">opção 2</option>
-                  <option value="">opção 3</option>
+                <label>Disciplinas a ser(em) ministrada(s) pelo professor</label>
+                <select class="form-control select2" multiple="multiple" data-placeholder="Selecione a(s) disciplina(s)" style="width: 100%;">
+                  <option>Alabama</option>
+                  <option>Alaska</option>
+                  <option>California</option>
+                  <option>Delaware</option>
+                  <option>Tennessee</option>
+                  <option>Texas</option>
+                  <option>Washington</option>
                 </select>
-              </div>
+             </div>
             </div> 
           </div><!-- ./col-xs-12 col-md-4 -->
 
-          <div class="col-xs-12 col-md-4">
-            
-            <div class="col-xs-12">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Email</label>
-                <input type="email" name="email" value="" placeholder="Insira o email" id="exampleInputEmail1" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-xs-12">
-              <div class="form-group">
-                <label for="exampleInputPassword1">Password(Senha)</label>
-                <input type="password" name="password"  placeholder="Digite um password" id="exampleInputPassword1" class="form-control">
-              </div>
-            </div>
-          </div> <!-- ./col-xs-4 -->
-
-        </div><!-- /.panel-body-->
+       </div><!-- /.panel-body-->
       </div><!-- /.panel-default-->
     </div><!-- /.col-xs-12 col-md-12-->
     <div class="col-xs-12 col-md-12">
