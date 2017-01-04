@@ -1,15 +1,15 @@
 @extends('app')
 
 @section('htmlheader_title')
-    Alunos
+    Turmas
 @endsection
 
 @section('contentheader_description')
-  Todos os alunos cadastrados no Sistema Alvorada
+  Todas as turmas cadastrados no Sistema Alvorada
 @endsection
 
 @section('breadcrumb_level_2')
-  Alunos
+  Turmas
 @endsection
 
 @section('breadcrumb_level_1')
@@ -17,7 +17,7 @@
 @endsection
 
 @section('breadcrumb_level_2')
-  Alunos
+  Turmas
 @endsection
 
 
