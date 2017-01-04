@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('auth/login');
 });
 
 Route::get('home', 'HomeController@index');
@@ -36,9 +36,15 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Disciplinas@store');
 	});
 
+	Route::group(['prefix' => 'turmas'], function(){
+		Route::get('listagem', 'Turmas@index');
+		Route::get('cadastrar', 'Turmas@create');
+		Route::post('cadastrar', 'Turmas@store');
+	});
+
 	Route::group(['prefix' => 'notas'], function(){
-		Route::get('listagem', 'Notas@index');
 		Route::get('cadastrar', 'Notas@index');
+		Route::get('listagem', 'Notas@visualizar');
 		Route::post('cadastrar', 'Notas@store');
 		Route::get('{codigoTurma}/cadastrar', 'Notas@create');
 	});
