@@ -30,10 +30,17 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Professores@store');
 	});
 
-		Route::group(['prefix' => 'disciplinas'], function(){
+	Route::group(['prefix' => 'disciplinas'], function(){
 		Route::get('listagem', 'Disciplinas@index');
 		Route::get('cadastrar', 'Disciplinas@create');
 		Route::post('cadastrar', 'Disciplinas@store');
+	});
+
+	Route::group(['prefix' => 'notas'], function(){
+		Route::get('listagem', 'Notas@index');
+		Route::get('cadastrar', 'Notas@index');
+		Route::post('cadastrar', 'Notas@store');
+		Route::get('{codigoTurma}/cadastrar', 'Notas@create');
 	});
 
 
