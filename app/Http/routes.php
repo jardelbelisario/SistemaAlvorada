@@ -30,12 +30,10 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Professores@store');
 	});
 
-<<<<<<< HEAD
+
 
 		Route::group(['prefix' => 'disciplinas'], function(){
-=======
-	Route::group(['prefix' => 'disciplinas'], function(){
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
+
 		Route::get('listagem', 'Disciplinas@index');
 		Route::get('cadastrar', 'Disciplinas@create');
 		Route::post('cadastrar', 'Disciplinas@store');
@@ -46,17 +44,6 @@ Route::group(['prefix' => 'home'], function(){
 		Route::get('cadastrar', 'Turmas@create');
 		Route::post('cadastrar', 'Turmas@store');
 	});
-<<<<<<< HEAD
-=======
 
-	Route::group(['prefix' => 'notas'], function(){
-		Route::get('cadastrar', 'Notas@index');
-		Route::get('listagem', 'Notas@visualizar');
-		Route::post('cadastrar', 'Notas@store');
-		Route::get('{codigoTurma}/cadastrar', 'Notas@create');
-	});
-
-
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
 });
 
