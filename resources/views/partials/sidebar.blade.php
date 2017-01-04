@@ -75,13 +75,14 @@
             <li class="treeview">
                 <a href="#"><i class='fa fa-tasks'></i> <span>Notas</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="{{ url('home/alunos/cadastrar') }}"> Cadastrar</a></li>
-                    <li><a href="{{ url('home/alunos/listagem') }}">Visualizar</a></li>
+                    <li><a href="{{ url('home/notas/cadastrar') }}"> Cadastrar</a></li>
+                    <li><a href="{{ url('home/notas/listagem') }}">Visualizar</a></li>
                 </ul>
             </li>
 
             
-        </ul><!-- /.sidebar-menu -->
+        </ul><!--
+         /.sidebar-menu -->
     </section>
     <!-- /.sidebar -->
 </aside>

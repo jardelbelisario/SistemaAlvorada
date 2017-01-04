@@ -36,6 +36,13 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Disciplinas@store');
 	});
 
+	Route::group(['prefix' => 'notas'], function(){
+		Route::get('listagem', 'Notas@index');
+		Route::get('cadastrar', 'Notas@index');
+		Route::post('cadastrar', 'Notas@store');
+		Route::get('{codigoTurma}/cadastrar', 'Notas@create');
+	});
+
 
 });
 
