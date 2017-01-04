@@ -31,7 +31,7 @@ Route::group(['prefix' => 'home'], function(){
 	});
 
 
-		Route::group(['prefix' => 'disciplinas'], function(){
+	Route::group(['prefix' => 'disciplinas'], function(){
 		Route::get('listagem', 'Disciplinas@index');
 		Route::get('cadastrar', 'Disciplinas@create');
 		Route::post('cadastrar', 'Disciplinas@store');
@@ -41,6 +41,12 @@ Route::group(['prefix' => 'home'], function(){
 		Route::get('listagem', 'Turmas@index');
 		Route::get('cadastrar', 'Turmas@create');
 		Route::post('cadastrar', 'Turmas@store');
+	});
+
+	Route::group(['prefix' => 'cursos'], function(){
+		Route::get('listagem', 'Cursos@index');
+		Route::get('cadastrar', 'Cursos@create');
+		Route::post('cadastrar', 'Cursos@store');
 	});
 });
 
