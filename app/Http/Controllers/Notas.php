@@ -8,7 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Alert;
 
-class Turmas extends Controller
+class Notas extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,16 +17,21 @@ class Turmas extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
-        $contentheader_title =  "LISTAGEM DE TURMAS";
-        $contentheader_description = "Todos as turmas cadastradas no Sistema Alvorada.";
-=======
-        $contentheader_title =  "LISTAGEM DE TURMA";
-        $contentheader_description = "Todas as turmas cadastrados no Sistema Alvorada.";
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
+        $contentheader_title =  "LISTAGEM DE NOTAS";
+        $contentheader_description = "Todas as notas cadastrados no Sistema Alvorada.";
 
-        return view('turmas.listagem', compact('contentheader_title','contentheader_description'));
-       // return "Listagem de todos os alunos";
+        //return view('notas.listagem', compact('contentheader_title','contentheader_description'));
+        return view('notas.notas-turmas', compact('contentheader_title','contentheader_description'));
+       // return "Listagem de todos os notas";
+    }
+
+    public function visualizar()
+    {
+        $contentheader_title =  "LISTAGEM DE NOTAS";
+        $contentheader_description = "Todas as notas cadastrados no Sistema Alvorada.";
+
+        return view('notas.notas', compact('contentheader_title','contentheader_description'));
+       // return "Listagem de todos os notas";
     }
 
     /**
@@ -36,9 +41,9 @@ class Turmas extends Controller
      */
     public function create()
     {
-        $contentheader_title =  "CADASTRO DE TURMA";
-        $contentheader_description = "Cadastro de uma nova turma no Sistema Alvorada.";
-        return view('turmas.cadastro', compact('contentheader_title','contentheader_description'));
+        $contentheader_title =  "CADASTRO DE NOTAS";
+        $contentheader_description = "Cadastro de uma nova nota no Sistema Alvorada.";
+        return view('notas.cadastro', compact('contentheader_title','contentheader_description'));
     }
 
     /**
@@ -49,17 +54,13 @@ class Turmas extends Controller
      */
     public function store(Request $request)
     {
-        Alert::success(
-                        'Caso seja necessário, faça um novo cadastro.', 
+        Alert::success( 'Caso seja necessário, faça um novo cadastro.', 
                         'Cadastro realizado com sucesso!'
                     )->persistent("Ok");;
-        return redirect('/home/turmas/cadastrar');
+        return redirect('/home/notas/cadastrar');
     }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
     /**
      * Display the specified resource.
      *

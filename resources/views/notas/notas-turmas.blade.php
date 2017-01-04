@@ -18,7 +18,6 @@ disciplinas
 
 
 @section('main-content')
-<<<<<<< HEAD
 
 <!-- Main content -->
 <section class="content">
@@ -28,7 +27,7 @@ disciplinas
       
       <div class="box box-danger">
         <!-- form start -->
-        <form action="/home/disciplinas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
+        <form name="form-notas" action="" method="POST" enctype="multipart/form-data" role="form">
           {!! csrf_field() !!}
           <div class="box-header with-border">
            <!--  <h3 class="box-title">
@@ -36,7 +35,7 @@ disciplinas
                 <i class="fa fa-list"></i> Ir para listagem de disciplinas
               </a>
             </h3> -->
-            <h3 class="box-title">DISCIPLINAS</h3>
+            <h3 class="box-title">ESCOLHA A TURMA PARA INSERIR AS NOTAS</h3>
             <h3 class="box-title pull-right">
               <a href="/home/disciplinas/listagem" class="btn btn-default pull-left" >
                 <i class="fa fa-list"></i> Ir para listagem de disciplinas
@@ -46,17 +45,20 @@ disciplinas
 
           <div class="box-body">
 
-            <div class="col-xs-12 col-md-4">
+            <div class="col-xs-12 col-md-12">
 
               <div class="col-xs-12">
                 <div class="form-group">
-                  <label for="exampleInputEmail1">Nome:</label>
-                  <input type="text" name="name" value="" placeholder="Nome" id="exampleInputNome" class="form-control">
+                  <label>Encontre a turma pelo código correspondente</label>
+                  <select name="SelectIdTurma" class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true">
+                    <option selected="selected">Selecione uma Turma</option>
+                    <option value="enf1611ajlb">ENF1611A-JLB</option>
+                    <option value="">ENF1621A-AMA</option>
+                    <option value="">ENF1613A-AÇL</option>
+                    <option value="">ENF1612A-IMP</option>
+                  </select>
                 </div>
               </div>
-
-              
-
           </div> <!-- ./col-xs-4 -->
         </div><!-- /.box box-danger-->
       </div>
@@ -66,9 +68,11 @@ disciplinas
     <div class="col-xs-12">
       <div class="box-footer">
         <div class="form-group">
-          <button  type="submit" class="btn btn-alvorada btn-block btn-lg" type="submit">
-            Enviar Dados
-          </button>
+<!--           <button  type="submit" class="btn btn-alvorada btn-block btn-lg" type="submit">
+            Acessar Turma
+          </button> -->
+          <input type="submit" value="Acessar Turma" class="btn btn-alvorada btn-block btn-lg">
+          <!-- <a href="notas/{{}}/cadastrar" class="btn btn-alvorada btn-block btn-lg"> Acessar Turma</a> -->
         </div>
       </div>
     </div>
@@ -100,52 +104,5 @@ disciplinas
   </div>
 </div>
 
-=======
-<section class="container-wrapper">
-<!-- form start -->
-<form action="/home/disciplinas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
-{!! csrf_field() !!}
-  <div class="row">
-    <div class="col-xs-12 col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          Home
-        </div>
-        <div class="panel-body">
-
-          <div class="col-xs-12 col-md-12">
-
-            <div class="col-xs-12 col-md-6">
-              <div class="form-group">
-                <label for="exampleInputEmail1">Nome:</label>
-                <input type="text" name="name" value="" placeholder="Nome" id="exampleInputNome" class="form-control">
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-md-6">
-              <div class="form-group">
-                <label for="exampleInputTelefone">Carga Horária:</label>
-                <input type="number" name="telefone" value=""  placeholder="Insira a quantidade de horas" id="exampleInputTelefone" class="form-control">
-              </div>
-            </div>         
-
-          </div><!-- /.col-xs-12 col-md-12 -->
-
-          
-        </div><!-- /.panel-body-->
-       </div><!-- /.panel-default-->
-      </div><!-- /.col-xs-12 col-md-12-->
-      <div class="col-xs-12 col-md-12">
-        <div class="box-footer">
-          <div class="form-group">
-            <button  type="submit" class="btn btn-alvorada btn-block btn-lg" type="submit">
-              Enviar Dados
-            </button>
-          </div>
-        </div>
-      </div><!-- /.col-xs-12 col-md-12-->
-    </div><!-- /.row -->
- </form>
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
 </section><!-- /.content -->
 @endsection

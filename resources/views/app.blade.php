@@ -45,10 +45,11 @@ desired effect
             @yield('main-content')
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
+    @include('partials.footer')
 
     @include('partials.controlsidebar')
 
-    @include('partials.footer')
+   
 
 </div><!-- ./wrapper -->
 

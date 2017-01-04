@@ -45,10 +45,11 @@ desired effect
             <?php echo $__env->yieldContent('main-content'); ?>
         </section><!-- /.content -->
     </div><!-- /.content-wrapper -->
+    <?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
     <?php echo $__env->make('partials.controlsidebar', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 
-    <?php echo $__env->make('partials.footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+   
 
 </div><!-- ./wrapper -->
 
