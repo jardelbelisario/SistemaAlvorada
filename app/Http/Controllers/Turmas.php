@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
-use Alert;
 
-class Notas extends Controller
+class Turmas extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,20 +16,11 @@ class Notas extends Controller
      */
     public function index()
     {
-        $contentheader_title =  "LISTAGEM DE NOTAS";
-        $contentheader_description = "Todas as notas cadastrados no Sistema Alvorada.";
+        $contentheader_title =  "LISTAGEM DE TURMA";
+        $contentheader_description = "Todas as turmas cadastrados no Sistema Alvorada.";
 
-        return view('notas.listagem', compact('contentheader_title','contentheader_description'));
-       // return "Listagem de todos os notas";
-    }
-
-    public function visualizar()
-    {
-        $contentheader_title =  "LISTAGEM DE NOTAS";
-        $contentheader_description = "Todas as notas cadastrados no Sistema Alvorada.";
-
-        return view('notas.notas', compact('contentheader_title','contentheader_description'));
-       // return "Listagem de todos os notas";
+        return view('turmas.listagem', compact('contentheader_title','contentheader_description'));
+       // return "Listagem de todos os alunos";
     }
 
     /**
@@ -40,9 +30,9 @@ class Notas extends Controller
      */
     public function create()
     {
-        $contentheader_title =  "CADASTRO DE NOTAS";
-        $contentheader_description = "Cadastro de uma nova nota no Sistema Alvorada.";
-        return view('notas.cadastro', compact('contentheader_title','contentheader_description'));
+        $contentheader_title =  "CADASTRO DE TURMA";
+        $contentheader_description = "Cadastro de uma nova turma no Sistema Alvorada.";
+        return view('turmas.cadastro', compact('contentheader_title','contentheader_description'));
     }
 
     /**
@@ -53,10 +43,11 @@ class Notas extends Controller
      */
     public function store(Request $request)
     {
-        Alert::success( 'Caso seja necessário, faça um novo cadastro.', 
+        Alert::success(
+                        'Caso seja necessário, faça um novo cadastro.', 
                         'Cadastro realizado com sucesso!'
                     )->persistent("Ok");;
-        return redirect('/home/notas/cadastrar');
+        return redirect('/home/turmas/cadastrar');
     }
 
 

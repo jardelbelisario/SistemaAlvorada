@@ -44,8 +44,8 @@ desired effect
             <!-- Your Page Content Here -->
             @yield('main-content')
         </section><!-- /.content -->
-         @include('partials.footer')
     </div><!-- /.content-wrapper -->
+    @include('partials.footer')
 
     @include('partials.controlsidebar')
 

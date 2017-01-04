@@ -20,7 +20,7 @@ disciplinas
 @section('main-content')
 
 <!-- Main content -->
-<section class="content">
+<section class="container-wrapper">
   <div class="row">
     <div class="col-xs-12 col-md-12">
       <!-- general form elements -->
@@ -79,25 +79,6 @@ disciplinas
 </div><!-- /.col-md-12 --> 
 </div><!-- /.row -->
 
-
-<!-- Modal Chamando a tela Video -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <video id="user-media" class="video-area tamanho-video" autoplay="autoplay" ></video>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id="takephoto" onClick="snapshot();"  data-dismiss="modal">Salvar Foto</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 </section><!-- /.content -->
 @endsection
