@@ -16,6 +16,31 @@ Route::get('/', function () {
 });
 
 Route::get('home', 'HomeController@index');
-Route::get('home/alunos/listagem', 'Alunos@index');
-Route::get('home/alunos/cadastrar', 'Alunos@create');
-Route::post('home/alunos/cadastrar', 'Alunos@store');
+Route::group(['prefix' => 'home'], function(){
+	
+	Route::group(['prefix' => 'alunos'], function(){
+		Route::get('listagem', 'Alunos@index');
+		Route::get('cadastrar', 'Alunos@create');
+		Route::post('cadastrar', 'Alunos@store');
+	});
+
+	Route::group(['prefix' => 'professores'], function(){
+		Route::get('listagem', 'Professores@index');
+		Route::get('cadastrar', 'Professores@create');
+		Route::post('cadastrar', 'Professores@store');
+	});
+
+
+		Route::group(['prefix' => 'disciplinas'], function(){
+		Route::get('listagem', 'Disciplinas@index');
+		Route::get('cadastrar', 'Disciplinas@create');
+		Route::post('cadastrar', 'Disciplinas@store');
+	});
+
+	Route::group(['prefix' => 'turmas'], function(){
+		Route::get('listagem', 'Turmas@index');
+		Route::get('cadastrar', 'Turmas@create');
+		Route::post('cadastrar', 'Turmas@store');
+	});
+});
+

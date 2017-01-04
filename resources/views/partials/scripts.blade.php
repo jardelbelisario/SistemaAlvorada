@@ -14,10 +14,26 @@
 <!-- Select2 -->
 <script src="{{asset('/plugins/select2/select2.full.min.js')}}"></script>
 
+
 <!-- Optionally, you can add Slimscroll and FastClick plugins.
       Both of these plugins are recommended to enhance the
       user experience. Slimscroll is required when using the
       fixed layout. -->
+
+
+<script>
+$(document).ready(function(){
+/*$("#pegaValor").click(function(){
+      var campo1 = document.getElementById('oi');
+        $(".onde_vai").append(" <b>"+ campo1.value"</b>");
+         // alert(campo1.value);
+    });*/
+$("option").click(function(){
+  $(this).appendTo("#onde_vai");
+});
+  });
+
+  </script>
 
  <script>
   $(function () {
@@ -36,9 +52,6 @@
   });
 
 </script>
-
-
-
 
 
 <!-- SCRIPT PARA PEGAR IMAGEM DO IMPUT -->
