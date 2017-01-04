@@ -35,26 +35,26 @@
           <table id="example1" class="table table-bordered table-striped">
             <thead>
               <tr>
-                <th>Matrícula</th>
+                <th style="width: 100px;">Matrícula</th>
                 <th>Nome</th>
-                <th>Telefone</th>
-                <th>Turma</th>
-                <th style="width: 100px;">Ações</th>
+                <th class="centered">Telefone</th>
+                <th class="centered">Turma</th>
+                <th class="centered" style="width: 100px;">Ações</th>
               </tr>
             </thead>
             <tbody>
               <?php for ($i=0; $i < 50; $i++) { ?>
               
               <tr role="row" class="odd">
-                <td class="sorting_1">Gecko_<?= $i ?> </td>
-                <td>Firefox 1.0s_<?= $i ?></td>
-                <td>Win 98+ / OSX.2+_<?= $i ?></td>
-                <td>1.7_<?= $i ?></td>
+                <td>120120-<?= $i ?> </td>
+                <td>João da Silva Pereira_<?= $i ?></td>
+                <td class="centered">+55 99 955555-5555</td>
+                <td class="centered">ENF1611A-<?= $i ?></td>
                 <td>
                   <div class="btn-group">
-                     <a href="/panel/pacientes/listar/pacienteFechaId" type="button" class="btn btn-primary" title="Visualizar Perfil"> <i class="fa  fa-eye"></i></a>
-                    <a href="/panel/pacientes/editar/pacienteFechaId" type="button" class="btn btn-success" title="Editar Perfil"> <i class="fa  fa-edit"></i></a>
-                    <a href="/panel/pacientes/deletar/pacienteFechaId" type="button" class="btn btn-danger" title="Deletar Perfil"> <i class="fa   fa-close"></i></a>
+                     <a href="/home/alunos/listar/pacienteFechaId" type="button" class="btn btn-primary" title="Visualizar Perfil"> <i class="fa  fa-eye"></i></a>
+                    <a href="/home/alunos/editar/pacienteFechaId" type="button" class="btn btn-success" title="Editar Perfil"> <i class="fa  fa-edit"></i></a>
+                    <a href="/home/alunos/deletar/pacienteFechaId" type="button" class="btn btn-danger" title="Deletar Perfil"> <i class="fa  fa-close"></i></a>
                   </div>
                 </td>
               </tr>
@@ -65,10 +65,10 @@
             <tfoot>       
              <tr>
                <th rowspan="1" colspan="1">Matrícula</th>
-               <th rowspan="1" colspan="1">Nome</th>
-               <th rowspan="1" colspan="1">Telefone(s)</th>
-               <th rowspan="1" colspan="1">Turma</th>
-               <th rowspan="1" colspan="1">Ações</th>
+               <th class="centered" rowspan="1" colspan="1">Nome</th>
+               <th class="centered" rowspan="1" colspan="1">Telefone(s)</th>
+               <th class="centered" rowspan="1" colspan="1">Turma</th>
+               <th class="centered" rowspan="1" colspan="1">Ações</th>
              </tr>
             </tfoot>
           </table>
