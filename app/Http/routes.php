@@ -43,5 +43,6 @@ Route::group(['prefix' => 'home'], function(){
 		Route::get('cadastrar', 'Turmas@create');
 		Route::post('cadastrar', 'Turmas@store');
 	});
+	
 });
 
