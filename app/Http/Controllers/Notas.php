@@ -20,7 +20,8 @@ class Notas extends Controller
         $contentheader_title =  "LISTAGEM DE NOTAS";
         $contentheader_description = "Todas as notas cadastrados no Sistema Alvorada.";
 
-        return view('notas.listagem', compact('contentheader_title','contentheader_description'));
+        //return view('notas.listagem', compact('contentheader_title','contentheader_description'));
+        return view('notas.notas-turmas', compact('contentheader_title','contentheader_description'));
        // return "Listagem de todos os notas";
     }
 

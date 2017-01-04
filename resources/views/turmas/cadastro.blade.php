@@ -21,6 +21,9 @@ Turmas
 
 <!-- Main content -->
 <section class="container-wrapper">
+<!-- form start -->
+<form action="/home/turmas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
+{!! csrf_field() !!}
   <div class="row">
     <div class="col-xs-12 col-md-12">
 
@@ -68,7 +71,7 @@ Turmas
             <div class="col-xs-12">
              <div class="form-group">
                 <label>Disciplinas da grade desse curso</label>
-                <select class="form-control select2" multiple="multiple" data-placeholder="Select a State" style="width: 100%;">
+                <select class="form-control select2" multiple="multiple" data-placeholder="Selecione a(s) disciplina(s) dessa turma" style="width: 100%;">
                   <option>Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -94,5 +97,6 @@ Turmas
       </div>
     </div>
   </div><!-- /.row-->
+</form>
 </section><!-- /.content -->
 @endsection

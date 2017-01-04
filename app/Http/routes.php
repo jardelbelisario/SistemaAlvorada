@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('auth/login');
 });
 
 Route::get('home', 'HomeController@index');
@@ -43,8 +43,8 @@ Route::group(['prefix' => 'home'], function(){
 	});
 
 	Route::group(['prefix' => 'notas'], function(){
-		Route::get('listagem', 'Notas@visualizar');
 		Route::get('cadastrar', 'Notas@index');
+		Route::get('listagem', 'Notas@visualizar');
 		Route::post('cadastrar', 'Notas@store');
 		Route::get('{codigoTurma}/cadastrar', 'Notas@create');
 	});
