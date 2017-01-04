@@ -17,13 +17,10 @@ class Turmas extends Controller
      */
     public function index()
     {
-<<<<<<< HEAD
+
         $contentheader_title =  "LISTAGEM DE TURMAS";
         $contentheader_description = "Todos as turmas cadastradas no Sistema Alvorada.";
-=======
-        $contentheader_title =  "LISTAGEM DE TURMA";
-        $contentheader_description = "Todas as turmas cadastrados no Sistema Alvorada.";
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
+
 
         return view('turmas.listagem', compact('contentheader_title','contentheader_description'));
        // return "Listagem de todos os alunos";
@@ -56,10 +53,6 @@ class Turmas extends Controller
         return redirect('/home/turmas/cadastrar');
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
     /**
      * Display the specified resource.
      *
