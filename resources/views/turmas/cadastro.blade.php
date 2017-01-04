@@ -97,5 +97,4 @@ Turmas
   </div><!-- /.row-->
 </form>
 </section><!-- /.content -->
->>>>>>> bd44c5e4220ca560a7a0c8474a396e7810e5ad27
 @endsection
