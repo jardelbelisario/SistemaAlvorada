@@ -1,46 +1,33 @@
 @extends('app')
 
 @section('htmlheader_title')
-  Turmas
-@endsection
-
 @section('contentheader_title')
-  Listagem de turmas
+  Cursos
 @endsection
 
 @section('breadcrumb_level_1')
-  <a href="{{ url('home') }}">Home</a>
+<a href="{{ url('home') }}">Home</a>
 @endsection
 
 @section('breadcrumb_level_2')
-  Turmas
-  @endsection
+Cursos
+@endsection
 
 
-  @section('main-content')
+@section('main-content')
 
-          <!-- Main content -->
-  <section class="content">
-    <div class="row">
-      <div class="col-xs-12 col-md-12">
-        <!-- general form elements -->
+<!-- Main content -->
+<section class="container-wrapper">
+<!-- form start -->
+<form action="/home/turmas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
+{!! csrf_field() !!}
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
 
-        <div class="box box-danger">
-          <!-- form start -->
-          <form action="/home/turmas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
-            {!! csrf_field() !!}
-            <div class="box-header with-border">
-              <!--  <h3 class="box-title">
-                 <a href="/home/alunos/listagem" class="btn btn-default pull-left" >
-                   <i class="fa fa-list"></i> Ir para listagem de Alunos
-                 </a>
-               </h3> -->
-              <h3 class="box-title">DADOS DO CURSO</h3>
-            </div><!-- /.box-header -->
-
-            <div class="box-body">
-
-              <div class="col-xs-12 col-md-5">
+      <div class="panel panel-default">
+        <div class="panel-heading">Home</div>
+        <div class="panel-body">
+          <div class="col-xs-12 col-md-12">
 
                 <div class="col-xs-12">
                   <div class="form-group">
@@ -48,8 +35,8 @@
                     <input type="text" name="name" value="" placeholder="Nome" id="oi1" class="form-control">
                   </div>
                 </div>
-
-                <div class="col-xs-12">
+          </div>
+                <div class="col-xs-12 12 col-md-12">
                   <div class="box-footer">
                     <div class="form-group">
                       <button  type="submit" class="btn btn-alvorada btn-block btn-lg" type="submit">
@@ -57,9 +44,8 @@
                       </button>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </div>     
+        </div>
 
       </form>
 

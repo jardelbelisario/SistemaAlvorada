@@ -1,6 +1,7 @@
 @extends('app')
 
 @section('htmlheader_title')
+@section('contentheader_title')
     Cursos
 @endsection
 
@@ -21,16 +22,22 @@
 @endsection
 
 
-
-
 @section('main-content')
-<div class="container-wrapper">
+
+<!-- Main content -->
+<section class="container-wrapper">
+<!-- form start -->
+<form action="/home/turmas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
+{!! csrf_field() !!}
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-xs-12 col-md-12">
+
       <div class="panel panel-default">
-        <!--<div class="panel-heading">Alunos - Pesquise por matrícula, nome, telefone, turma</div>-->
-          <div class="panel-body">
-            <div class="box box-danger">      
+        <div class="panel-heading">Home</div>
+        <div class="panel-body">
+          <div class="col-xs-12 col-md-12"> 
+              
+
               <div class="box-header with-border">
                 <h3 class="box-title">
                   <a href="/home/cursos/cadastrar" class="btn btn-default pull-left" >

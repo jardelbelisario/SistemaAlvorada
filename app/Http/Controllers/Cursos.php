@@ -32,7 +32,7 @@ class Cursos extends Controller
     public function create()
     {
         $contentheader_title =  "CADASTRO DE CURSO";
-        $contentheader_description = "Cadastro de uma novo curso no Sistema Alvorada.";
+        $contentheader_description = "Cadastro de um novo curso no Sistema Alvorada.";
         return view('cursos.cadastro', compact('contentheader_title','contentheader_description'));
     }
 
