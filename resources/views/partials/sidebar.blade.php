@@ -60,7 +60,6 @@
                 <ul class="treeview-menu">
                     <li><a href="{{ url('home/turmas/cadastrar') }}">Cadastrar</a></li>
                     <li><a href="{{ url('home/turmas/listagem') }}">Visualizar</a></li>
-                    <li><a href="#">Notas</a></li>
                 </ul>
             </li>
 
