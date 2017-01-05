@@ -13,10 +13,6 @@
 Notas
 @endsection
 
-
-@section('main-content')
-
-
 @section('main-content')
 <div class="container-wrapper">
   <div class="row">

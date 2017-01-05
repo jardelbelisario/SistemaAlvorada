@@ -56,5 +56,11 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Unidades@store');
 	});
 
+		Route::group(['prefix' => 'notas'], function(){
+		Route::get('listagem', 'Notas@visualizar');
+		Route::get('cadastrar', 'Notas@create');
+		Route::post('cadastrar', 'Notas@store');
+	});
+
 });
 
