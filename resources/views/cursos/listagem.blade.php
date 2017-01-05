@@ -21,13 +21,12 @@
   Cursos
 @endsection
 
-
 @section('main-content')
 
 <!-- Main content -->
 <section class="container-wrapper">
 <!-- form start -->
-<form action="/home/turmas/cadastrar" method="POST" enctype="multipart/form-data" role="form">
+<form action="/home/cursos/cadastrar" method="POST" enctype="multipart/form-data" role="form">
 {!! csrf_field() !!}
   <div class="row">
     <div class="col-xs-12 col-md-12">
