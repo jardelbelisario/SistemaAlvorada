@@ -36,14 +36,24 @@ disciplinas
             <div class="col-xs-12 col-md-6">
               <div class="form-group">
                 <label for="exampleInputEmail1">Nome:</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-book"></i>
+                  </div>
                 <input type="text" name="name" value="" placeholder="Nome" id="exampleInputNome" class="form-control">
+                </div>
               </div>
             </div>
 
             <div class="col-xs-12 col-md-6">
               <div class="form-group">
                 <label for="exampleInputTelefone">Carga Horária:</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-safari"></i>
+                  </div>
                 <input type="number" name="telefone" value=""  placeholder="Insira a quantidade de horas" id="exampleInputTelefone" class="form-control">
+                </div>
               </div>
             </div>         
 

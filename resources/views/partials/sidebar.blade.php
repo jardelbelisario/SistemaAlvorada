@@ -79,6 +79,14 @@
                 </ul>
             </li>
 
+            <li class="treeview">
+                <a href="#"><i class='fa fa-tasks'></i> <span>Unidade/Cidade</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="{{ url('home/unidades/cadastrar') }}"> Cadastrar</a></li>
+                    <li><a href="{{ url('home/unidades/listagem') }}">Visualizar</a></li>
+                </ul>
+            </li>
+
             
         </ul><!--
          /.sidebar-menu -->

@@ -2,7 +2,7 @@
 
 @section('htmlheader_title')
 @section('contentheader_title')
-  Cursos
+  Unidade
 @endsection
 
 @section('breadcrumb_level_1')
@@ -10,7 +10,7 @@
 @endsection
 
 @section('breadcrumb_level_2')
-Cursos
+Unidade
 @endsection
 
 
@@ -31,10 +31,10 @@ Cursos
 
                 <div class="col-xs-12">
                   <div class="form-group">
-                    <label for="exampleInputNome1">Nome do curso:</label>
+                    <label for="exampleInputNome1">Nome da unidade/cidade:</label>
                     <div class="input-group">
                       <div class="input-group-addon">
-                      <i class="fa fa-graduation-cap"></i>
+                      <i class="fa fa-home"></i>
                       </div>
                     <input type="text" name="name" value="" placeholder="Nome" id="oi1" class="form-control">
                     </div>

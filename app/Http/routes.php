@@ -50,5 +50,11 @@ Route::group(['prefix' => 'home'], function(){
 		Route::post('cadastrar', 'Cursos@store');
 	});
 
+	Route::group(['prefix' => 'unidades'], function(){
+		Route::get('listagem', 'Unidades@index');
+		Route::get('cadastrar', 'Unidades@create');
+		Route::post('cadastrar', 'Unidades@store');
+	});
+
 });
 

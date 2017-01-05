@@ -1,26 +1,20 @@
 @extends('app')
 
 @section('htmlheader_title')
-    Notas
-@endsection
-
-@section('contentheader_description')
-  Todos os notas cadastrados no Sistema Alvorada
-@endsection
-
-@section('breadcrumb_level_2')
+@section('contentheader_title')
   Notas
 @endsection
 
 @section('breadcrumb_level_1')
-  <a href="{{ url('home') }}">Home</a>
+<a href="{{ url('home') }}">Home</a>
 @endsection
 
 @section('breadcrumb_level_2')
-  Notas
+Notas
 @endsection
 
 
+@section('main-content')
 
 
 @section('main-content')

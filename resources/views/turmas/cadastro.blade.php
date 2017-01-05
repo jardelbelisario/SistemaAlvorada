@@ -32,7 +32,12 @@ Turmas
             <div class="col-xs-12">
               <div class="form-group">
                 <label for="exampleInputEmail1">Nome:</label>
+                <div class="input-group">
+                  <div class="input-group-addon">
+                    <i class="fa fa-users"></i>
+                  </div>
                 <input type="text" name="name" value="" placeholder="Nome" id="exampleInputNome" class="form-control">
+                </div>
               </div>
             </div>
 
@@ -40,7 +45,7 @@ Turmas
               <div class="form-group">
                 <label>Curso</label>
                 <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true" name="id_ubs">
-                  <option selected="selected">Selecione um Estado</option>
+                  <option selected="selected">Selecione um Curso</option>
                   <option value="">opção 1</option>
                   <option value="">opção 1</option>
                   <option value="">opção 1</option>
@@ -54,7 +59,7 @@ Turmas
                 <label>Turno</label>
 
                 <select class="form-control select2 select2-hidden-accessible" style="width: 100%;"  aria-hidden="true" name="permissao">
-                  <option selected="selected">Selecione uma Cidade</option>
+                  <option selected="selected">Selecione um Turno</option>
                   <option value="3">opção 1</option>
                   <option value="2">opção 1</option>
                   <option value="1">opção 1</option>
@@ -69,7 +74,7 @@ Turmas
              <div class="form-group">
                 <label>Disciplinas da grade desse curso</label>
                 <select class="form-control select2" multiple="multiple" data-placeholder="Selecione a(s) disciplina(s) dessa turma" style="width: 100%;">
-
+    
                   <option>Alabama</option>
                   <option>Alaska</option>
                   <option>California</option>
@@ -78,6 +83,7 @@ Turmas
                   <option>Texas</option>
                   <option>Washington</option>
                 </select>
+
              </div>
             </div><!-- /.col-xs-12 -->
           </div><!-- ./col-xs-12 col-md-4 -->
