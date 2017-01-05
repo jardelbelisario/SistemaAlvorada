@@ -31,7 +31,20 @@ Turmas
 
             <div class="col-xs-12">
               <div class="form-group">
-                <label for="exampleInputEmail1">Nome:</label>
+                <label>Unidade</label>
+                <select class="form-control select2 select2-hidden-accessible" style="width: 100%;" aria-hidden="true" name="id_ubs">
+                  <option selected="selected">Selecione uma Unidade/Cidade</option>
+                  <option value="">opção 1</option>
+                  <option value="">opção 1</option>
+                  <option value="">opção 1</option>
+                  <option value="">opção 1</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-xs-12">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Nome da turma:</label>
                 <div class="input-group">
                   <div class="input-group-addon">
                     <i class="fa fa-users"></i>
